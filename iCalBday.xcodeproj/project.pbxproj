@@ -1,0 +1,544 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D202CEA0486D31800D8A456 /* iCalBday_Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 32DBCFA20370C41700C91783 /* iCalBday_Prefix.pch */; };
+		8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C167DFE841241C02AAC07 /* InfoPlist.strings */; };
+		8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */; };
+		8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F506C035013D953901CA16C8 /* PreferencePanes.framework */; };
+		F560507912E01EB200944C6D /* ICBBoolToStartStopValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = F560507712E01EB200944C6D /* ICBBoolToStartStopValueTransformer.h */; };
+		F560507A12E01EB200944C6D /* ICBBoolToStartStopValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F560507812E01EB200944C6D /* ICBBoolToStartStopValueTransformer.m */; };
+		F560507E12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = F560507C12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.h */; };
+		F560507F12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F560507D12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.m */; };
+		F573BA5012DE726800E06651 /* iCalBdayDaemon.app in Resources */ = {isa = PBXBuildFile; fileRef = F573BA4812DE724800E06651 /* iCalBdayDaemon.app */; };
+		F573BA8112DE732200E06651 /* iCalBdayPref.h in Headers */ = {isa = PBXBuildFile; fileRef = F573BA7F12DE732200E06651 /* iCalBdayPref.h */; };
+		F573BA8212DE732200E06651 /* iCalBdayPref.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BA8012DE732200E06651 /* iCalBdayPref.m */; };
+		F573BA8812DE737700E06651 /* iCalBdayPref.tiff in Resources */ = {isa = PBXBuildFile; fileRef = F573BA8612DE737700E06651 /* iCalBdayPref.tiff */; };
+		F573BA8912DE737700E06651 /* iCalBdayPref.xib in Resources */ = {isa = PBXBuildFile; fileRef = F573BA8712DE737700E06651 /* iCalBdayPref.xib */; };
+		F573BAAB12DF71D600E06651 /* ICBMain.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BAAA12DF71D600E06651 /* ICBMain.m */; };
+		F573BAAE12DF92BF00E06651 /* ICBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BAAD12DF92BF00E06651 /* ICBAppDelegate.m */; };
+		F573BB0F12DFACE200E06651 /* ICBStringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB0E12DFACE200E06651 /* ICBStringConstants.m */; };
+		F573BB1012DFAD0100E06651 /* ICBStringConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB0E12DFACE200E06651 /* ICBStringConstants.m */; };
+		F573BB1312DFAD2500E06651 /* ICBCalendarPairSynchronizer.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB1212DFAD2500E06651 /* ICBCalendarPairSynchronizer.m */; };
+		F573BB1512DFAD3C00E06651 /* CalendarStore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F573BB1412DFAD3C00E06651 /* CalendarStore.framework */; };
+		F573BB2112DFBAF700E06651 /* ICBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F573BB1F12DFBAF700E06651 /* ICBUtilities.h */; };
+		F573BB2212DFBAF700E06651 /* ICBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB2012DFBAF700E06651 /* ICBUtilities.m */; };
+		F573BB2312DFBAF700E06651 /* ICBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB2012DFBAF700E06651 /* ICBUtilities.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F573BA4E12DE725300E06651 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 089C1669FE841209C02AAC07 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F573BA4712DE724800E06651;
+			remoteInfo = iCalBdayDaemon;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		089C1672FE841209C02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		089C167EFE841241C02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		089C167FFE841241C02AAC07 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
+		1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = /System/Library/Frameworks/Cocoa.framework; sourceTree = "<absolute>"; };
+		32DBCFA20370C41700C91783 /* iCalBday_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCalBday_Prefix.pch; sourceTree = "<group>"; };
+		8D202CF70486D31800D8A456 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		8D202CF80486D31800D8A456 /* iCalBday.prefPane */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iCalBday.prefPane; sourceTree = BUILT_PRODUCTS_DIR; };
+		F506C035013D953901CA16C8 /* PreferencePanes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PreferencePanes.framework; path = /System/Library/Frameworks/PreferencePanes.framework; sourceTree = "<absolute>"; };
+		F560507712E01EB200944C6D /* ICBBoolToStartStopValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBBoolToStartStopValueTransformer.h; sourceTree = "<group>"; };
+		F560507812E01EB200944C6D /* ICBBoolToStartStopValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBBoolToStartStopValueTransformer.m; sourceTree = "<group>"; };
+		F560507C12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBBoolToIsRunningValueTransformer.h; sourceTree = "<group>"; };
+		F560507D12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBBoolToIsRunningValueTransformer.m; sourceTree = "<group>"; };
+		F573BA4812DE724800E06651 /* iCalBdayDaemon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iCalBdayDaemon.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F573BA4A12DE724800E06651 /* iCalBdayDaemon-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iCalBdayDaemon-Info.plist"; sourceTree = "<group>"; };
+		F573BA7F12DE732200E06651 /* iCalBdayPref.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCalBdayPref.h; sourceTree = "<group>"; };
+		F573BA8012DE732200E06651 /* iCalBdayPref.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCalBdayPref.m; sourceTree = "<group>"; };
+		F573BA8612DE737700E06651 /* iCalBdayPref.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = iCalBdayPref.tiff; sourceTree = "<group>"; };
+		F573BA8712DE737700E06651 /* iCalBdayPref.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = iCalBdayPref.xib; sourceTree = "<group>"; };
+		F573BAAA12DF71D600E06651 /* ICBMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBMain.m; sourceTree = "<group>"; };
+		F573BAAC12DF92BF00E06651 /* ICBAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBAppDelegate.h; sourceTree = "<group>"; };
+		F573BAAD12DF92BF00E06651 /* ICBAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBAppDelegate.m; sourceTree = "<group>"; };
+		F573BB0D12DFACE200E06651 /* ICBStringConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBStringConstants.h; sourceTree = "<group>"; };
+		F573BB0E12DFACE200E06651 /* ICBStringConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBStringConstants.m; sourceTree = "<group>"; };
+		F573BB1112DFAD2500E06651 /* ICBCalendarPairSynchronizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBCalendarPairSynchronizer.h; sourceTree = "<group>"; };
+		F573BB1212DFAD2500E06651 /* ICBCalendarPairSynchronizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBCalendarPairSynchronizer.m; sourceTree = "<group>"; };
+		F573BB1412DFAD3C00E06651 /* CalendarStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalendarStore.framework; path = System/Library/Frameworks/CalendarStore.framework; sourceTree = SDKROOT; };
+		F573BB1F12DFBAF700E06651 /* ICBUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBUtilities.h; sourceTree = "<group>"; };
+		F573BB2012DFBAF700E06651 /* ICBUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBUtilities.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8D202CF20486D31800D8A456 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
+				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F573BA4612DE724800E06651 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F573BB1512DFAD3C00E06651 /* CalendarStore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		089C166AFE841209C02AAC07 /* iCalBday */ = {
+			isa = PBXGroup;
+			children = (
+				F573BB0712DFAC6600E06651 /* Shared */,
+				F573BA6C12DE72B000E06651 /* Daemon */,
+				F573BA6B12DE72AC00E06651 /* PrefPane */,
+				32DBCFA10370C40200C91783 /* Other Sources */,
+				089C167CFE841241C02AAC07 /* Resources */,
+				089C1671FE841209C02AAC07 /* Frameworks and Libraries */,
+				19C28FB8FE9D52D311CA2CBB /* Products */,
+			);
+			name = iCalBday;
+			sourceTree = "<group>";
+		};
+		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
+				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
+			);
+			name = "Frameworks and Libraries";
+			sourceTree = "<group>";
+		};
+		089C167CFE841241C02AAC07 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F573BA4A12DE724800E06651 /* iCalBdayDaemon-Info.plist */,
+				8D202CF70486D31800D8A456 /* Info.plist */,
+				089C167DFE841241C02AAC07 /* InfoPlist.strings */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1058C7ADFEA557BF11CA2CBB /* Cocoa.framework */,
+				F506C035013D953901CA16C8 /* PreferencePanes.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
+		1058C7AEFEA557BF11CA2CBB /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				089C1672FE841209C02AAC07 /* Foundation.framework */,
+				089C167FFE841241C02AAC07 /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		19C28FB8FE9D52D311CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8D202CF80486D31800D8A456 /* iCalBday.prefPane */,
+				F573BA4812DE724800E06651 /* iCalBdayDaemon.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		32DBCFA10370C40200C91783 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32DBCFA20370C41700C91783 /* iCalBday_Prefix.pch */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		F5604F1012E00EF900944C6D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F573BB1412DFAD3C00E06651 /* CalendarStore.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F560507B12E01EB600944C6D /* Value Transformers */ = {
+			isa = PBXGroup;
+			children = (
+				F560507712E01EB200944C6D /* ICBBoolToStartStopValueTransformer.h */,
+				F560507812E01EB200944C6D /* ICBBoolToStartStopValueTransformer.m */,
+				F560507C12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.h */,
+				F560507D12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.m */,
+			);
+			name = "Value Transformers";
+			sourceTree = "<group>";
+		};
+		F573BA6B12DE72AC00E06651 /* PrefPane */ = {
+			isa = PBXGroup;
+			children = (
+				F573BA7C12DE72FE00E06651 /* Classes */,
+				F573BA8512DE733F00E06651 /* Resources */,
+			);
+			path = PrefPane;
+			sourceTree = "<group>";
+		};
+		F573BA6C12DE72B000E06651 /* Daemon */ = {
+			isa = PBXGroup;
+			children = (
+				F5604F1012E00EF900944C6D /* Frameworks */,
+				F573BA7B12DE72F700E06651 /* Classes */,
+			);
+			path = Daemon;
+			sourceTree = "<group>";
+		};
+		F573BA7B12DE72F700E06651 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F573BAAA12DF71D600E06651 /* ICBMain.m */,
+				F573BAAC12DF92BF00E06651 /* ICBAppDelegate.h */,
+				F573BAAD12DF92BF00E06651 /* ICBAppDelegate.m */,
+				F573BB1112DFAD2500E06651 /* ICBCalendarPairSynchronizer.h */,
+				F573BB1212DFAD2500E06651 /* ICBCalendarPairSynchronizer.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F573BA7C12DE72FE00E06651 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F560507B12E01EB600944C6D /* Value Transformers */,
+				F573BA7F12DE732200E06651 /* iCalBdayPref.h */,
+				F573BA8012DE732200E06651 /* iCalBdayPref.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F573BA8512DE733F00E06651 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F573BA8612DE737700E06651 /* iCalBdayPref.tiff */,
+				F573BA8712DE737700E06651 /* iCalBdayPref.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F573BB0712DFAC6600E06651 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F573BB0D12DFACE200E06651 /* ICBStringConstants.h */,
+				F573BB0E12DFACE200E06651 /* ICBStringConstants.m */,
+				F573BB1F12DFBAF700E06651 /* ICBUtilities.h */,
+				F573BB2012DFBAF700E06651 /* ICBUtilities.m */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		8D202CE90486D31800D8A456 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D202CEA0486D31800D8A456 /* iCalBday_Prefix.pch in Headers */,
+				F573BA8112DE732200E06651 /* iCalBdayPref.h in Headers */,
+				F573BB2112DFBAF700E06651 /* ICBUtilities.h in Headers */,
+				F560507912E01EB200944C6D /* ICBBoolToStartStopValueTransformer.h in Headers */,
+				F560507E12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8D202CE80486D31800D8A456 /* iCalBday */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "iCalBday" */;
+			buildPhases = (
+				8D202CE90486D31800D8A456 /* Headers */,
+				8D202CEC0486D31800D8A456 /* Resources */,
+				8D202CF00486D31800D8A456 /* Sources */,
+				8D202CF20486D31800D8A456 /* Frameworks */,
+				8D202CF50486D31800D8A456 /* Rez */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F573BA4F12DE725300E06651 /* PBXTargetDependency */,
+			);
+			name = iCalBday;
+			productInstallPath = "$(HOME)/Library/PreferencePanes";
+			productName = iCalBday;
+			productReference = 8D202CF80486D31800D8A456 /* iCalBday.prefPane */;
+			productType = "com.apple.product-type.bundle";
+		};
+		F573BA4712DE724800E06651 /* iCalBdayDaemon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F573BA4D12DE724900E06651 /* Build configuration list for PBXNativeTarget "iCalBdayDaemon" */;
+			buildPhases = (
+				F573BA4412DE724800E06651 /* Resources */,
+				F573BA4512DE724800E06651 /* Sources */,
+				F573BA4612DE724800E06651 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iCalBdayDaemon;
+			productName = iCalBdayDaemon;
+			productReference = F573BA4812DE724800E06651 /* iCalBdayDaemon.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		089C1669FE841209C02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "iCalBday" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 089C166AFE841209C02AAC07 /* iCalBday */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8D202CE80486D31800D8A456 /* iCalBday */,
+				F573BA4712DE724800E06651 /* iCalBdayDaemon */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8D202CEC0486D31800D8A456 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F573BA5012DE726800E06651 /* iCalBdayDaemon.app in Resources */,
+				8D202CED0486D31800D8A456 /* InfoPlist.strings in Resources */,
+				F573BA8812DE737700E06651 /* iCalBdayPref.tiff in Resources */,
+				F573BA8912DE737700E06651 /* iCalBdayPref.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F573BA4412DE724800E06651 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXRezBuildPhase section */
+		8D202CF50486D31800D8A456 /* Rez */ = {
+			isa = PBXRezBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXRezBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8D202CF00486D31800D8A456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F573BA8212DE732200E06651 /* iCalBdayPref.m in Sources */,
+				F573BB1012DFAD0100E06651 /* ICBStringConstants.m in Sources */,
+				F573BB2212DFBAF700E06651 /* ICBUtilities.m in Sources */,
+				F560507A12E01EB200944C6D /* ICBBoolToStartStopValueTransformer.m in Sources */,
+				F560507F12E01ED500944C6D /* ICBBoolToIsRunningValueTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F573BA4512DE724800E06651 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F573BAAB12DF71D600E06651 /* ICBMain.m in Sources */,
+				F573BAAE12DF92BF00E06651 /* ICBAppDelegate.m in Sources */,
+				F573BB0F12DFACE200E06651 /* ICBStringConstants.m in Sources */,
+				F573BB1312DFAD2500E06651 /* ICBCalendarPairSynchronizer.m in Sources */,
+				F573BB2312DFBAF700E06651 /* ICBUtilities.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F573BA4F12DE725300E06651 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F573BA4712DE724800E06651 /* iCalBdayDaemon */;
+			targetProxy = F573BA4E12DE725300E06651 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		089C167DFE841241C02AAC07 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				089C167EFE841241C02AAC07 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1DBD214908BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iCalBday_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = iCalBday;
+				WRAPPER_EXTENSION = prefPane;
+				ZERO_LINK = YES;
+			};
+			name = Debug;
+		};
+		1DBD214A08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = iCalBday_Prefix.pch;
+				INFOPLIST_FILE = Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				PRODUCT_NAME = iCalBday;
+				WRAPPER_EXTENSION = prefPane;
+			};
+			name = Release;
+		};
+		1DBD214D08BA80EA00186707 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Debug;
+		};
+		1DBD214E08BA80EA00186707 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_GC = supported;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+				VALID_ARCHS = "i386 ppc x86_64";
+			};
+			name = Release;
+		};
+		F573BA4B12DE724800E06651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "iCalBdayDaemon-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = iCalBdayDaemon;
+			};
+			name = Debug;
+		};
+		F573BA4C12DE724800E06651 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/AppKit.framework/Headers/AppKit.h";
+				INFOPLIST_FILE = "iCalBdayDaemon-Info.plist";
+				INSTALL_PATH = "$(HOME)/Applications";
+				OTHER_LDFLAGS = (
+					"-framework",
+					Foundation,
+					"-framework",
+					AppKit,
+				);
+				PREBINDING = NO;
+				PRODUCT_NAME = iCalBdayDaemon;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DBD214808BA80EA00186707 /* Build configuration list for PBXNativeTarget "iCalBday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214908BA80EA00186707 /* Debug */,
+				1DBD214A08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DBD214C08BA80EA00186707 /* Build configuration list for PBXProject "iCalBday" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DBD214D08BA80EA00186707 /* Debug */,
+				1DBD214E08BA80EA00186707 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F573BA4D12DE724900E06651 /* Build configuration list for PBXNativeTarget "iCalBdayDaemon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F573BA4B12DE724800E06651 /* Debug */,
+				F573BA4C12DE724800E06651 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 089C1669FE841209C02AAC07 /* Project object */;
+}
