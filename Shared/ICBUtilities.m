@@ -30,15 +30,4 @@
 	return isRunning;
 }
 
-+ (NSDate *)thisYearsFirstInstant {
-	NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
-	return [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
-}
-
-+ (NSDate *)nextYearsFirstInstant {
-	NSDateComponents *dateComponents = [[NSCalendar currentCalendar] components:NSYearCalendarUnit fromDate:[NSDate date]];
-	[dateComponents setYear:[dateComponents year] + 1];
-	return [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
-}
-
 @end

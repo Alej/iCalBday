@@ -9,6 +9,7 @@
 #import "ICBCalendarPairSynchronizer.h"
 #import "ICBStringConstants.h"
 #import "ICBUtilities.h"
+#import "NSDate+ARAdditions.h"
 
 @interface CalAlarm (ICBAdditions)
 
@@ -111,8 +112,8 @@
 	NSDictionary *reverseMappingTable = [NSDictionary dictionaryWithObjects:[mappingTable allKeys] forKeys:[mappingTable allValues]];
 	
 	
-	NSPredicate *sourcePredicate = [CalCalendarStore eventPredicateWithStartDate:[ICBUtilities thisYearsFirstInstant] endDate:[ICBUtilities nextYearsFirstInstant] calendars:[NSArray arrayWithObject:sCalendar]];
-	NSPredicate *targetPredicate = [CalCalendarStore eventPredicateWithStartDate:[ICBUtilities thisYearsFirstInstant] endDate:[ICBUtilities nextYearsFirstInstant] calendars:[NSArray arrayWithObject:tCalendar]];
+	NSPredicate *sourcePredicate = [CalCalendarStore eventPredicateWithStartDate:[NSDate AR_firstInstantOfCurrentYear] endDate:[NSDate AR_firstInstantOfNextYear] calendars:[NSArray arrayWithObject:sCalendar]];
+	NSPredicate *targetPredicate = [CalCalendarStore eventPredicateWithStartDate:[NSDate AR_firstInstantOfCurrentYear] endDate:[NSDate AR_firstInstantOfNextYear] calendars:[NSArray arrayWithObject:tCalendar]];
 	NSArray *sources = [calStore eventsWithPredicate:sourcePredicate];
 	NSArray *targets = [calStore eventsWithPredicate:targetPredicate];
 	NSDictionary *sourceMappingTable = [NSDictionary dictionaryWithObjects:sources forKeys:[sources valueForKey:@"uid"]];

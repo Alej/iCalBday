@@ -29,6 +29,8 @@
 		F573BB2112DFBAF700E06651 /* ICBUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = F573BB1F12DFBAF700E06651 /* ICBUtilities.h */; };
 		F573BB2212DFBAF700E06651 /* ICBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB2012DFBAF700E06651 /* ICBUtilities.m */; };
 		F573BB2312DFBAF700E06651 /* ICBUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = F573BB2012DFBAF700E06651 /* ICBUtilities.m */; };
+		F577689912E8B1A6004AE69D /* libARToolkitOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F577689612E8B197004AE69D /* libARToolkitOSX.a */; };
+		F577689A12E8B1A8004AE69D /* libARToolkitOSX.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F577689612E8B197004AE69D /* libARToolkitOSX.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = F573BA4712DE724800E06651;
 			remoteInfo = iCalBdayDaemon;
+		};
+		F577689512E8B197004AE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F577688E12E8B197004AE69D /* ARToolbox.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F577633512E281FD004AE69D /* libARToolkitOSX.a */;
+			remoteInfo = ARToolkitOSX;
+		};
+		F577689712E8B1A1004AE69D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F577688E12E8B197004AE69D /* ARToolbox.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F577633412E281FD004AE69D /* ARToolkitOSX */;
+			remoteInfo = ARToolkitOSX;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -70,6 +86,8 @@
 		F573BB1412DFAD3C00E06651 /* CalendarStore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CalendarStore.framework; path = System/Library/Frameworks/CalendarStore.framework; sourceTree = SDKROOT; };
 		F573BB1F12DFBAF700E06651 /* ICBUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ICBUtilities.h; sourceTree = "<group>"; };
 		F573BB2012DFBAF700E06651 /* ICBUtilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ICBUtilities.m; sourceTree = "<group>"; };
+		F577688E12E8B197004AE69D /* ARToolbox.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ARToolbox.xcodeproj; path = Frameworks/ARToolbox/ARToolbox.xcodeproj; sourceTree = "<group>"; };
+		F57768AC12E8B202004AE69D /* headers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = headers; path = Frameworks/ARToolbox/build/headers; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F577689912E8B1A6004AE69D /* libARToolkitOSX.a in Frameworks */,
 				8D202CF30486D31800D8A456 /* Cocoa.framework in Frameworks */,
 				8D202CF40486D31800D8A456 /* PreferencePanes.framework in Frameworks */,
 			);
@@ -86,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F577689A12E8B1A8004AE69D /* libARToolkitOSX.a in Frameworks */,
 				F573BB1512DFAD3C00E06651 /* CalendarStore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,6 +130,7 @@
 		089C1671FE841209C02AAC07 /* Frameworks and Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				F577688C12E8B187004AE69D /* ARToolbox */,
 				1058C7ACFEA557BF11CA2CBB /* Linked Frameworks */,
 				1058C7AEFEA557BF11CA2CBB /* Other Frameworks */,
 			);
@@ -240,6 +261,23 @@
 			path = Shared;
 			sourceTree = "<group>";
 		};
+		F577688C12E8B187004AE69D /* ARToolbox */ = {
+			isa = PBXGroup;
+			children = (
+				F57768AC12E8B202004AE69D /* headers */,
+				F577688E12E8B197004AE69D /* ARToolbox.xcodeproj */,
+			);
+			name = ARToolbox;
+			sourceTree = "<group>";
+		};
+		F577688F12E8B197004AE69D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F577689612E8B197004AE69D /* libARToolkitOSX.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -290,6 +328,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F577689812E8B1A1004AE69D /* PBXTargetDependency */,
 			);
 			name = iCalBdayDaemon;
 			productName = iCalBdayDaemon;
@@ -313,6 +352,12 @@
 			);
 			mainGroup = 089C166AFE841209C02AAC07 /* iCalBday */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F577688F12E8B197004AE69D /* Products */;
+					ProjectRef = F577688E12E8B197004AE69D /* ARToolbox.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				8D202CE80486D31800D8A456 /* iCalBday */,
@@ -320,6 +365,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F577689612E8B197004AE69D /* libARToolkitOSX.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libARToolkitOSX.a;
+			remoteRef = F577689512E8B197004AE69D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		8D202CEC0486D31800D8A456 /* Resources */ = {
@@ -385,6 +440,11 @@
 			target = F573BA4712DE724800E06651 /* iCalBdayDaemon */;
 			targetProxy = F573BA4E12DE725300E06651 /* PBXContainerItemProxy */;
 		};
+		F577689812E8B1A1004AE69D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = ARToolkitOSX;
+			targetProxy = F577689712E8B1A1004AE69D /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -411,6 +471,10 @@
 				GCC_PREFIX_HEADER = iCalBday_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = iCalBday;
 				WRAPPER_EXTENSION = prefPane;
 				ZERO_LINK = YES;
@@ -426,6 +490,10 @@
 				GCC_PREFIX_HEADER = iCalBday_Prefix.pch;
 				INFOPLIST_FILE = Info.plist;
 				INSTALL_PATH = "$(HOME)/Library/PreferencePanes";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = iCalBday;
 				WRAPPER_EXTENSION = prefPane;
 			};
@@ -439,6 +507,7 @@
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./**";
 				ONLY_ACTIVE_ARCH = YES;
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
@@ -454,6 +523,7 @@
 				GCC_ENABLE_OBJC_GC = supported;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "./**";
 				PREBINDING = NO;
 				SDKROOT = macosx10.6;
 				VALID_ARCHS = "i386 ppc x86_64";
@@ -474,6 +544,8 @@
 				INFOPLIST_FILE = "iCalBdayDaemon-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
 					"-framework",
 					Foundation,
 					"-framework",
@@ -497,6 +569,8 @@
 				INFOPLIST_FILE = "iCalBdayDaemon-Info.plist";
 				INSTALL_PATH = "$(HOME)/Applications";
 				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
 					"-framework",
 					Foundation,
 					"-framework",

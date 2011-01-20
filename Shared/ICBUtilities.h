@@ -14,7 +14,5 @@
 }
 
 + (BOOL)isRunning:(NSString *)theBundleIdentifier;
-+ (NSDate *)nextYearsFirstInstant;
-+ (NSDate *)thisYearsFirstInstant;
 
 @end
