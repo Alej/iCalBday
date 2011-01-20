@@ -1,0 +1,3 @@
+[submodule "Frameworks/ARToolbox"]
+	path = Frameworks/ARToolbox
+	url = git@github.com:Alej/ARToolbox.git
